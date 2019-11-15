@@ -30,8 +30,8 @@ client.on("message", async message => {
                         return message.reply("**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**");
                     }
                         message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟\nمحتوى البرودكاست: \`${args}\`**`).then(m => {
-                            m.react("✅")
-                            .then(() => m.react("❌"));
+                            m.react("")
+                            .then(() => m.react(""));
 
                             let yesFilter = (reaction, user) => reaction.emoji.name == "✅" && user.id == message.author.id;
                             let noFiler = (reaction, user) => reaction.emoji.name == "❌" && user.id == message.author.id;
@@ -44,7 +44,7 @@ client.on("message", async message => {
                                     message.channel.send().then(msg => msg.delete(5000));
                                         message.guild.members.forEach(member => {
                                             let bc = new Discord.RichEmbed()
-                                            .        ("Message", args);
+                                            .addField("Message", args);
 
                                             member.sendEmbed(bc);
                                         });
