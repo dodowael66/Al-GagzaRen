@@ -19,7 +19,7 @@ client.user.setStatus("dnd")
 
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "la")) {
+            if (message.content.startsWith(prefix + "#")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
