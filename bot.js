@@ -12,19 +12,19 @@ client.on("message", message => {
  m.send(`${argresult}\n ${m}`);
 })
  message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` :  عدد الاعضاء المستلمين
- this bot by 3bodaa`); 
+ this bot by AG-Clan`); 
  message.delete(); 
 };     
 });
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : darkxx`);
+      console.log(`Desert Bot- Script By : AG-Clan`);
         console.log(`----------------`);
       console.log(`ON ${client.guilds.size} Servers '     Script By : black ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`CODE TGK_PETER`,"http://twitch.tv/DeathShop")
+client.user.setGame(`USE-CODE AR 12`,"https://www.youtube.com/channel/UC2lJzDgdOWGv3kbwAp8wlzA?view_as=subscriber")
 client.user.setStatus("dnd")
 });
 
