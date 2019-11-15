@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-console.log("3boda");
+console.log("AG-Clan");
 var prefix = "#";
 client.on("message", message => {
 
