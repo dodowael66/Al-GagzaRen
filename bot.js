@@ -44,8 +44,9 @@ client.on("message", async message => {
                                     message.channel.send().then(msg => msg.delete(5000));
                                         message.guild.members.forEach(member => {
                                             let bc = new Discord.RichEmbed()
-                                            .addField("Message", args);
+                                                    ("Message", args);
 
+                                            member.sendEmbed(bc);
                                         });
                         });
                         no.on("collect", v => {
